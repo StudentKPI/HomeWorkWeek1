@@ -34,4 +34,28 @@ public class Utils {
         }
         System.out.println(result);
     }
+
+    public static int[][] genMatrix(int lines, int rows, int min, int max){
+
+        int result[][] = new int[lines][rows];
+
+        for (int i = 0; i < result.length; i++) {
+            for (int j = 0; j < result[i].length; j++) {
+                result[i][j] = (int) (Math.random()*(max + 1  - min) + min);
+            }
+
+        }
+        return result;
+    }
+
+    public static void printMatrix(int[][] matrix){
+
+        for (int i = 0; i < matrix.length; i++) {
+            for (int j = 0; j < matrix[i].length; j++) {
+                System.out.print(matrix[i][j] + " ");
+            }
+            System.out.println();
+        }
+    }
+
 }

@@ -13,20 +13,18 @@ public class logika {
         String text = scanner.nextLine();
         System.out.println("Pleas enter some word");
         String word = scanner.nextLine();
-       chekText(text, word);
-       // System.out.println(x + " is even " + result);
+        chekText(text, word);
+        // System.out.println(x + " is even " + result);
 
     }
-    public static void chekText(String text, String word){
-        if(text.contains(word) && word.length() > 5){
+
+    public static void chekText(String text, String word) {
+        if (text.contains(word) && word.length() > 5) {
             System.out.println("good word found");
-        }
-        else {
+        } else {
             System.out.println("bad!");
         }
     }
-
-
 
 
     public static void chekValue(int x) {
@@ -37,5 +35,6 @@ public class logika {
         }
     }
 }
+
 
 
